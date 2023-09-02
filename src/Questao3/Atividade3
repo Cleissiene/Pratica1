@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+void soma (int val1, int val2, int *r){
+*r = val1 + val2; //altera o conteúto para onde r* aponta para 30
+}
+
+int main(){
+int val1= 10, val2= 20;
+int resultado;
+
+soma(val1, val2, &resultado);	//&resultado(endereço para eceber o ponteiro) // chamo o meu método soma que trás três valores, cada qual com seu conteúdo
+printf("Resultado: %d", resultado);
+return 0;
+}
